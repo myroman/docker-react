@@ -1,5 +1,5 @@
 sudo: required
-# language: generic
+language: generic
 services:
   - docker
 
@@ -9,4 +9,4 @@ before_install:
 
 # commands to run the test suite or do anything else
 script:
-  - docker run -e CI=true romanpavlushchenko/docker-react npm run start
+  - docker run -e CI=true romanpavlushchenko/docker-react npm run test
